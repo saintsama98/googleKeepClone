@@ -1,0 +1,382 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: #333;
+    padding-top: 50px;
+    background-image: url("image3.png");
+    
+}
+
+/* Page Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    background-color: #3b9f3d;
+    background-image: url("");
+    width: 730px;
+    padding-left: 165px;
+    height: 250px;
+    padding-top: 85px;
+
+    border-radius: 400px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: -60px;
+    font-size: 120px;
+    margin-left: 350px;
+    
+        
+    
+}
+
+/* Note Input Area */
+.note-input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    /* max-width: 500px; */
+    background: #ffffff;
+    padding: 20px;
+    /*box-shadow: 0px 0px 20px rgb(15, 255, 3);*/
+    border-radius: 0px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+}
+
+
+.note-input-area textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.note-input-area input{
+    align-self: flex-start;
+    
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+.note-input-area button1 {
+    width: 35%;
+    padding: 10px;
+    padding-left: 36px;
+    font-size: 1rem;
+    color: rgb(255, 249, 249);
+    background-color:#3b9f3d;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: -7px;
+    margin-left: 180px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10PX;
+    border-bottom-right-radius: 0px;
+}
+.note-input-area button2 {
+    margin-left: 180px;
+    width: 95px;
+    padding: 5px;
+    font-size: 17px;
+    padding-left: 22px;
+    padding-top: 8px;
+    font-size: 16px;
+    height: 35px;
+    /*font-size: 0.8em;*/
+    color: rgb(255, 255, 255);
+    
+    /*background-image: url("image4.png");*/
+    background-color: #3b9f3d;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 17px;
+    margin-bottom: -7px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+}
+
+.note-input-area button1:hover {
+    background-color: #15651b;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+
+}
+.note-input-area button2:hover {
+    background-color: #15651b;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+.note-input-area img{
+    width: 6%;
+    
+    align-self: flex-end;
+    margin-top: 22px;
+    margin-right: 32px;
+    
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+    
+
+
+
+/* Notes Display Area */
+.notes-container {
+    display: flex;
+    flex-wrap: wrap; /*this allows arrangement of items in multiple dimensions a certain limit*/
+    gap: 5px;
+    /*width: 450PX;*/ 
+    justify-content: center;
+    height: 100%;
+    border-radius: 200PX;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 20px;
+    padding-left:20PX ;
+    padding-right: 20PX;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    width: auto;  
+    height: auto;   
+    word-wrap: break-word;
+
+    
+}
+
+.note {
+    background: #eeeec3;
+    padding: 15px;
+    /*width: 200px;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;  
+    height: auto;   
+    word-wrap: break-word;  
+
+
+}
+
+.note h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 5px;
+    width: auto;  
+    height: auto;  
+    word-wrap: break-word;  
+
+}
+
+.note p {
+    font-size: 0.95rem;
+    color: #9d9d0c;
+    width: auto;  
+    height: auto;  
+    word-wrap: break-word;  /* Ensure text wraps if too long */
+
+    
+}
+
+.delete-btn {
+    align-self: flex-end;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    color: white;
+    background-color: #e62626;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-top-right-radius: 0px;
+    
+    
+}
+
+.delete-btn:hover {
+    background-color: #b52520;
+}
+h5{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-top:5px ;
+    margin-bottom: -35px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+h6{
+    color: #ffffff;
+    margin-top: 2px;
+}
+h7{
+    color: #f4a460;
+}
+.header{
+    /*background-color: #c9fbca;*/
+    width: 290px;
+    height: 59px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-bottom: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    margin-top: -45px;
+    margin-left: 200px;
+    
+    
+            
+}
+/*.sub-header{
+    padding-top: 0px;
+    padding-left: 22px;
+}*/
+.sub-header{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 270px;
+    margin-left: 44px;
+    margin-top:30px ;
+    padding-left: 30px;
+    height: 47px;
+    padding-top: 13px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+
+    
+    
+}
+.main{
+    display:flex;
+    gap: -400px;
+    
+    
+    
+}
+.header2{
+    background-color: #ffffff;
+    width: 0px;
+    height: 0px;
+    
+}
+.Sign-in-btn{
+    background-color: #3b9f3d;
+    margin-left: 50PX;
+    margin-top: -80PX;
+    width: 80px;
+    height: 43px;
+    border-radius: 10px;
+    color: #363535;
+    font-size: larger;
+    margin-left: 5px;
+    
+
+}
+.profile-icon{
+    border-radius: 35px;
+    margin-left: 30px;
+    margin-top: -11px;
+    
+    
+}
+.cluster{
+    display: flex;
+    background-color: #a3a3a3;
+    border-radius: 20px;
+    height: 50px;
+    margin-left: 0px;
+    padding-top: 17px;
+    padding-right: 28px;
+    padding-left: -20px;
+    margin-top: -15px;
+    
+}
+
+
+/*.....................................................................*/
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+    background-color: #20a825;
+    color: white;
+}
+
+.modal-content button[type="button"] {
+    background-color: #f44336;
+}
+
+.modal-content button:hover {
+    opacity: 0.8;
+}

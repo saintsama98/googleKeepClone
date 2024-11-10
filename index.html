@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudy - Google Keep Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cluster">
+            <div class="profile-icon">
+                <img src="icon3.png" alt="Search" width="36" height="36">
+            </div>
+            <div class="header-2">
+                <button class="Sign-in-btn">Sign in</button>
+            </div>
+        </div>
+        
+        <h1>Cloudy</h1>
+    <div class="header">
+        <div class="sub-header">
+            <form action="/search" method="get">
+                    <input type="text"id="serch-contain" name="query" placeholder="Search..." required>
+                    <button type="submit" id="but">Go</button>
+            </form>
+        </div>
+    </div>
+    
+
+    </div>
+    
+
+    <!-- Note Input Area -->
+    <div class="note-input-area">
+        <input type="text" placeholder="Title" id="note-title" class="note-title">
+        <textarea placeholder="Take a note..." id="note-content" class="note-content"></textarea>
+        <h7>--------------------------------------</h7>
+        <button1 id="add-note-btn">Add </button1>
+        <button2 id="theme-adder">Theme</button2>
+        <img id="image-id" src="image.png">
+       
+    </div>
+    
+    <h6>-----------------------------------------------------------------------------------------------------------------------------------------</h6>
+    <h5>Your Crate 📦</h5>
+    
+    <!-- Notes Display Area -->
+    <div id="notes-container" class="notes-container">
+        <!-- Notes will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
